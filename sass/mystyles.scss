@@ -61,6 +61,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     font-size: 0.9rem;
   }
   .header-nav {
@@ -252,12 +253,26 @@ footer {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  .dev-team {
+    background-color: $header-alert-bg;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border-bottom: 2px solid #fff;
+    }
+  }
   .copyright {
     background-color: #000;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 400;
     a {
       color: #fff;
@@ -274,6 +289,7 @@ footer {
   background-position: right 1rem center;
   background-repeat: no-repeat;
   border-radius: 3rem;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +308,11 @@ footer {
   }
 
   &:focus {
-    outline: dashed 4px #000;
+    outline: dashed 4px #fff;
+  }
+
+  &.btn-sm {
+    padding: 0.5rem 1rem;
   }
 
   &.btn-primary {
